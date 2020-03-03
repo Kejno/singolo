@@ -1,2 +1,2 @@
 # singolo
-RS SCHOOL 2020. Singolo. Part 1 | Part 2 | Part 3
+RS SCHOOL 2020. Singolo. Part 1 (header, image, 3 columns layout)
