@@ -78,7 +78,11 @@ body{
     flex-direction: column;
 }
 
+<<<<<<< HEAD
+input::placeholder, textarea::placeholder{
+=======
 .feedback-form input::placeholder, .feedback-form textarea::placeholder{
+>>>>>>> e3e1e815ee512ff76214c832e71b2ec3f6eba31b
     font-size: 12px;
     font-weight: 400;
     position: relative;
@@ -86,20 +90,35 @@ body{
     left: 15px; 
 }
 
+<<<<<<< HEAD
+textarea::placeholder{
+=======
 .feedback-form textarea::placeholder{
+>>>>>>> e3e1e815ee512ff76214c832e71b2ec3f6eba31b
     top: 10px;
     letter-spacing: -1.8px;
 }
 
+<<<<<<< HEAD
+input, textarea{
+=======
 .feedback-form input, .feedback-form textarea{
+>>>>>>> e3e1e815ee512ff76214c832e71b2ec3f6eba31b
     height: 40px;
     margin: 0 10px 14px 10px;
     border-radius: 5px;
     border: none;
     background-color: #d6564f;
+<<<<<<< HEAD
+    color:#f0d8d9;
+}
+
+textarea{
+=======
 }
 
 .feedback-form textarea{
+>>>>>>> e3e1e815ee512ff76214c832e71b2ec3f6eba31b
     height: 204px;
     resize: none;
     overflow: hidden;
