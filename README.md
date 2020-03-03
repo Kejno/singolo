@@ -1,2 +1,2 @@
 # singolo
-RS SCHOOL 2020. Singolo. Part 1 and Singolo. Part 2
+RS SCHOOL 2020. Singolo. Part 1 | Part 2 | Part 3
