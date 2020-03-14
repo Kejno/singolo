@@ -144,37 +144,31 @@ for (let i = 0; i < itemPortfolio.length; i++) {
 }
 
 
+/* Get a quote */
+let form = document.querySelector('.feedback-form')
+let submit = document.querySelector('.submit-form')
+let modal = document.querySelector('.modal')
+let userName = document.querySelector('#feedback-name')
+let userEmail = document.querySelector('#feedback-email')
+let formSub = document.querySelector('#feedback-subject')
+let formTextarea = document.querySelector('#feedback-area')
+let formTheme = document.querySelector('.form-theme');
+let formDescr = document.querySelector('.form-descr')
+let formBtn = document.querySelector('.form-btn')
+form.onsubmit = (event) => {
+    event.preventDefault();
+    modal.classList.remove('hidden')
+    userName.value = '';
+    userEmail.value = '';
+    formSub.value ? formTheme.innerHTML = `Тема: ${formSub.value}` : formTheme.innerHTML = 'Без темы';
+    formTextarea.value ? formDescr.innerHTML = `Описание: ${formTextarea.value}` : formDescr.innerHTML = 'Без описания';
+    formBtn.onclick = () => {
+        modal.classList.add('hidden');
+        formSub.value = '';
+        formTextarea.value = '';
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-/* let btnLeft = document.querySelector('.btn-left')
-let sectionSlider = document.querySelector('.section-slider')
-let phone_1 = document.querySelectorAll('.phone')[0];
-let phone_2 = document.querySelectorAll('.phone')[1];
-let screen = document.querySelector('.screen')
-console.log(sectionSlider.style.background)
-btnLeft.onclick = () => {
-    sectionSlider.classList.toggle('slider-two');
-    phone_2.classList.toggle('hidden')
-    phone_1.style.marginRight == '0px' ? phone_1.style.marginRight = '147px' : phone_1.style.marginRight = '0px';
-    screen.style.backgroundImage == 'url("./assets/screen-green.png")'
-        ? screen.style.backgroundImage = 'url("./assets/screen-vertical.png")'
-        : screen.style.backgroundImage = 'url("./assets/screen-green.png")';
-
-    screen.style.backgroundPosition == '0px 0px'
-        ? screen.style.backgroundPosition = '-13px -133px'
-        : screen.style.backgroundPosition = '0px 0px'
-
-
-} */
 
 
 

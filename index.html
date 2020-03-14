@@ -237,7 +237,7 @@
                     dapibus,
                     tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
                 <div class="feedback-wrapper">
-                    <form action="#" class="feedback-form">
+                    <form action="#" method="GET" class="feedback-form">
                         <input type="text" id="feedback-name" placeholder="Name (Required)" required minlength="3"
                             maxlength="25" pattern="[a-zA-Z0-9]+">
                         <input type="email" id="feedback-email" placeholder="Email (Required)" required>
@@ -268,6 +268,16 @@
             </div>
         </div>
     </main>
+    <div class="modal hidden">
+        <div class="modal-wrapp">
+            <span>Письмо отправлено</span>
+            <br>
+            <div class="form-theme"></div>
+            <div class="form-descr"></div>
+            <button class="form-btn">OK</button>
+        </div>
+
+    </div>
 
     <footer>
         <div class="container">
@@ -282,6 +292,8 @@
             </div>
         </div>
     </footer>
+
+
 
     <script src="./script.js"></script>
 </body>
